@@ -18,5 +18,6 @@ public class IntSumReducer extends
 		}
 		result.set(sum);
 		context.write(key, result);
+		System.out.println("reduce输出：" + key.toString() + " " + result);
 	}
 }
